@@ -1,19 +1,7 @@
-const parent = React.createElement('div',{id:'parent'},
-    [
-        React.createElement('div',{id:'child-1'},
-        [ 
-            React.createElement('h1',{id:'heading-1'},'Iam heading 1'),
-            React.createElement('h2',{id:'heading-2'}, 'Iam heading 2') 
-        ]),
-        React.createElement('div',{id:'child-2'},
-        [ 
-            React.createElement('h1',{id:'heading-1'},'Iam heading 1'),
-            React.createElement('h2',{id:'heading-2'}, 'Iam heading 2') 
-        ])
-    ]
-)
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-console.log(parent);
+const parent = React.createElement('h1',{id:'heading'},'hello world from react hi worldfrom  🚀');
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
