@@ -1,0 +1,22 @@
+body 
+{
+    background-color: black;
+    color:white;
+}
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#heading 
+{
+    border:2px solid red;
+}
+#root 
+{
+    height:300px;
+    width: 100vw;
+    border:2px solid red;
+}
