@@ -12,7 +12,5 @@ body
 }
 #root 
 {
-    height:300px;
-    width: 100vw;
-    border:2px solid red;
+    border:10px solid red;
 }
