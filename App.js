@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-const heading = React.createElement('h1',{id:'heading'},'This is heading');
-const jsxHeading = (  
-<h1 className='heading'>Namaste React using JSX
-</h1> )
+const x = 4;
 
-console.log(jsxHeading);
+const Heading = () => (
+    <>
+      <h1>This is Heading from Function Component</h1>
+      <h1>This is Heading from Function Component</h1>
+      <h1>This is Heading from Function Component</h1>
+    </>
+)
+console.log(Heading())
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
-root.render(jsxHeading);
-
+root.render(<Heading/>)
