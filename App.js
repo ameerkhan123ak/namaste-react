@@ -8,7 +8,6 @@ const HeadingComponent =  (
 const Container = (props) => (
     <div id='container'>
         <h1>This is heading inside container</h1>
-        {/* <Container /> */}
     </div>
 )
 
