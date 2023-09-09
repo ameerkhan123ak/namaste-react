@@ -1,18 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-const x = 4;
-
-const Heading = () => (
-    <>
-      <h1>This is Heading from Function Component</h1>
-      <h1>This is Heading from Function Component</h1>
-      <h1>This is Heading from Function Component</h1>
-    </>
+const HeadingComponent =  (
+    <h1 id='heading'>This is Heading</h1>
 )
-console.log(Heading())
 
+const Container = (props) => (
+    <div id='container'>
+        <h1>This is heading inside container</h1>
+        {/* <Container /> */}
+    </div>
+)
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Heading/>)
+root.render(<Container color='red' />)
