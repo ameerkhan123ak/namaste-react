@@ -95,7 +95,6 @@
 {
     display: flex;
     justify-content: space-between;
-    color:gray;
 }
 #res-card-img 
 {
@@ -111,10 +110,26 @@
     font-size: 13px;
     color: gray;
 }
-.rating 
+#rating 
 {
-    color: orange;
+    text-align: left;
+    background-color: #24963f;
+    color:white;
+    padding:4px;
+    font-size: 14px;
+    border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5px;
+}
+.res-card-footer 
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+#rating i 
+{
+    font-size: 12px;
 }
