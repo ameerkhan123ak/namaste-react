@@ -166,7 +166,7 @@ const Body = () => {
                 <RestaurantCard resName='BBQ Nation' location='Erode' price='300.00' time='60' url='https://e0.pxfuel.com/wallpapers/308/845/desktop-wallpaper-bbq-chicken-grill-chicken.jpg'/>
             </div>
         </div>
-    );
+    )
 };
 const AppLayout = () => {
     return (
