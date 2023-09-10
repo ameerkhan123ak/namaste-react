@@ -1,16 +1,120 @@
-body 
-{
-    background-color: black;
-    color:white;
-}
 *
 {
+    
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.header 
+{
+    display: flex;
+    justify-content: space-between;
+    padding:10px 20px;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    position: sticky;
+    top:0;
+    background-color: white;
+    box-shadow: 0px 0pc 5px gray;
+}
+.logo-container h1
+{
+    font-family: 'Kaushan Script', cursive;
+    color: #E51636;
+}
+.header  ul li
+{
+    display: inline;
+    padding:0 20px;
+    color:#E51636;
+    cursor: pointer;
+    font-size: 20px;
+    height: 100%;
+}
+.header ul li:hover  
+{
+    color:rgb(116, 9, 27);
+}
+.search 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.search input 
+{
+    width: 500px;
+    height: 40px;
+    padding-left: 20px;
+    border: 2px solid #E51636;
+    outline: none;
+}
+.search i 
+{
+    background-color: #E51636;
+    padding:12px;
+    color:white;
+    cursor: pointer;
+}
+.search i:hover 
+{
+    background-color: red;
+}
+.res-container 
+{
+    margin: 40px 145px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.res-card 
+{
+    width: 220px;
+    border:1px solid gray;
+    border-radius: 5px;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding:7px;
+}
+.res-card h3 
+{
+    text-align: center;
     padding:0;
     margin:0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
-#root 
+.res-card:hover 
 {
-    border:10px solid red;
+    box-shadow: 0px 0px 2px 2px rgb(176, 175, 175)
+}
+.res-card-desc 
+{
+    display: flex;
+    justify-content: space-between;
+    color:gray;
+}
+#res-card-img 
+{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    object-position: center;
+}
+#res-card-time 
+{
+    text-align: right;
+    font-size: 13px;
+    color: gray;
+}
+.rating 
+{
+    color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
