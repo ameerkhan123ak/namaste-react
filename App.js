@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import resList from './file.json'
+import Footer from './Components/Footer';
 
 const Header = () => {
     return (
         <div className='header'>
             <div className='logo-container'>
-                <h1>Bhai Biriyani</h1>
+                <h1 id='logo'>Bhai Biriyani</h1>
             </div>
             <div className='nav-items'>
                 <ul>
@@ -68,6 +69,7 @@ const AppLayout = () => {
         <div className='app'>
             <Header />
             <Body />
+            <Footer />
         </div>
     );
 };
