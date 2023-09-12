@@ -20,3 +20,8 @@
  - Different Dev and Prod bundles
  
  # Namaste Biriyani
+
+ # React Hooks 
+  - Normal JS Utility Functions 
+  - useState() - super powerful state variables in react 
+  - useEffect()

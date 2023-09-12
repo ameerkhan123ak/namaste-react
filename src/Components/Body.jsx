@@ -1,19 +1,32 @@
 import React from "react";
-import resList from '../Files/file.json'
 import RestaurantCard from "./RestaurantCard";
-import TopRated from "./TopRated";
+import { listOfRestaurant } from '../utils/listOfRestaurants'
+import { useState  } from "react";
+
+let listOfRestaurants = listOfRestaurant;
 
 const Body = () => {
+
     return (
         <div className='body'>
             <div className='search'>
                 <input placeholder='search'/>
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            <TopRated />
+            <div className="top-rated-container">
+                <button id="top-rated-btn" onClick={
+                    () => {
+                        listOfRestaurants =  listOfRestaurants.filter(res => res.info.avgRating > 4)
+                        console.log(listOfRestaurants)
+                    }
+                }>
+                    Filter Top Rated Restaurant
+                    <i class="fa-solid fa-filter"></i>
+                </button>
+            </div>
             <div className='res-container'>
                 {
-                  resList.map(restaurant => <RestaurantCard key={restaurant.info.id} resData={restaurant}/>)
+                  listOfRestaurants.map(restaurant => <RestaurantCard key={restaurant.info.id} resData={restaurant}/>)
                 }
             </div>
         </div>
