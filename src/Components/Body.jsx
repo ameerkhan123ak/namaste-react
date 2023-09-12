@@ -1,6 +1,7 @@
 import React from "react";
-import resList from '../file.json'
+import resList from '../Files/file.json'
 import RestaurantCard from "./RestaurantCard";
+import TopRated from "./TopRated";
 
 const Body = () => {
     return (
@@ -9,6 +10,7 @@ const Body = () => {
                 <input placeholder='search'/>
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
+            <TopRated />
             <div className='res-container'>
                 {
                   resList.map(restaurant => <RestaurantCard key={restaurant.info.id} resData={restaurant}/>)
