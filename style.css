@@ -93,7 +93,8 @@
 }
 .res-card:hover 
 {
-    box-shadow: 0px 0px 2px 2px rgb(176, 175, 175)
+    box-shadow: 0px 0px 5px 4px rgb(176, 175, 175);
+    /* transform: translate(1.002); */
 }
 .res-card-desc 
 {
@@ -176,5 +177,5 @@
 }
 #top-rated-btn:hover 
 {
-    transform: scale(1.01);
+    box-shadow: 0px 0px 5px 3px gray;;
 }

@@ -3,9 +3,11 @@ import RestaurantCard from "./RestaurantCard";
 import { listOfRestaurant } from '../utils/listOfRestaurants'
 import { useState  } from "react";
 
-let listOfRestaurants = listOfRestaurant;
+let listOfRestaurantsData = listOfRestaurant;
 
 const Body = () => {
+
+    const [ listOfRestaurants, setListOfRestaurants ] = useState(listOfRestaurantsData); 
 
     return (
         <div className='body'>
@@ -16,8 +18,8 @@ const Body = () => {
             <div className="top-rated-container">
                 <button id="top-rated-btn" onClick={
                     () => {
-                        listOfRestaurants =  listOfRestaurants.filter(res => res.info.avgRating > 4)
-                        console.log(listOfRestaurants)
+                        const filteredList = listOfRestaurants.filter(res => res.info.avgRating > 4)
+                        setListOfRestaurants(filteredList)
                     }
                 }>
                     Filter Top Rated Restaurant
