@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
 
@@ -11,10 +12,10 @@ const Header = () => {
         <h1 id="logo">Namaste Biriyani</h1>
       </div>
       <div className="nav-items">
-        <ul>
-          <li>Home</li>
-          <li>About us</li>
-          <li>Contact</li>
+        <ul className="nav-ul">
+          <li><Link to='/'>Home</Link></li>
+          <li><Link to="/about">About us</Link></li>
+          <li><Link to='/contact'>Contact</Link></li>
           <li>
             <i class="fa-solid fa-cart-shopping"></i>
           </li>
