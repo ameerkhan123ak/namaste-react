@@ -8,7 +8,8 @@ const RestaurantCard = (props) => {
     <div className="res-card" style={{ backgroundColor: "#F0F0F0" }}>
       <img id="res-card-img" src={CDN_URL + resData.info.cloudinaryImageId} />
       <h3>{name}</h3>
-      <div className="res-card-desc">
+      <div className="res-card-desc"> 
+      
         <p>{locality}</p>
         <p>₹{totalFee / 10.0}</p>
       </div>
