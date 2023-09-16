@@ -85,6 +85,11 @@
     gap: 10px;
     padding:7px;
 }
+#restaurant-card-id
+{
+    text-decoration: none;
+    color:black;
+}
 .res-card h3 
 {
     text-align: center;
@@ -352,7 +357,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 106px;
+    margin-bottom: 30px;
 }
 .time-container .time-container-left
 {
